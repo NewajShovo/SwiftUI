@@ -16,6 +16,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     private var imageName: String
      var image: Image {
@@ -26,7 +27,8 @@ struct Landmark: Hashable, Codable, Identifiable {
     var locationCoordinate: CLLocationCoordinate2D {
           CLLocationCoordinate2D(
               latitude: coordinates.latitude,
-              longitude: coordinates.longitude)
+              longitude: coordinates.longitude
+          )
       }
 
 
