@@ -18,9 +18,6 @@ struct BadgeBackground: View {
                     )
                 )
                 
-//                print("Current widht: \(width * 0.95 + xOffset), height: \(height), xScale: \(xScale), xOffset: \(xOffset)")
-
-
                 HexagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
